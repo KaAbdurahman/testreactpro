@@ -1,0 +1,76 @@
+@import "../function.scss";
+
+.container {
+  width: remy(1600);
+  height: remy(900);
+  padding: remy(20);
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  margin: remy(441) remy(0) remy(20) remy(50);
+  width: remy(1344);
+  height: remy(349);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  color: #fff;
+}
+
+.masterFile {
+  margin-left: auto;
+}
+
+.status,
+.masterFile,
+.date {
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: remy(18) remy(30);
+  margin-right: remy(20);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  &.hovered {
+    background-color: rgba(255, 207, 75, 1);
+    color: #000;
+  }
+}
+
+.title {
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  width: remy(1344);
+  height: remy(132);
+  letter-spacing: remy(-2);
+  font-weight: 600;
+  font-size: remy(120);
+  margin: 0;
+}
+
+.subtitleName {
+  margin: 0;
+  font-size: remy(60);
+  font-weight: 400;
+}
+
+.title,
+.subtitle {
+  font-family: "Inter", sans-serif;
+}
+
+.indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 5px;
+}
