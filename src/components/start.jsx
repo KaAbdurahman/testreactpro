@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./start.module.scss";
 
-const Main = () => {
+const Start = () => {
   const [selected, setSelected] = useState("");
   const currentDate = new Date().toLocaleDateString();
   const headerRef = useRef(null);
@@ -65,4 +65,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Start;

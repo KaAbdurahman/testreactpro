@@ -44,27 +44,81 @@
   }
 }
 
+$title-font-size: remy(120);
+$subtitle-font-size: remy(60);
+$title-width: remy(1344);
+$subtitle-weight: 400;
+
 .title {
   text-align: left;
   color: rgba(255, 255, 255, 1);
-  width: remy(1344);
+  width: $title-width;
   height: remy(132);
   letter-spacing: remy(-2);
   font-weight: 600;
-  font-size: remy(120);
+  font-size: $title-font-size;
   margin: 0;
+
+  @media (max-width: 1200px) {
+    font-size: remy(80);
+    width: 100%; // Регулируйте по мере необходимости
+  }
+
+  @media (max-width: 800px) {
+    font-size: remy(70);
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: remy(60);
+    width: 100%;
+  }
 }
 
 .subtitleName {
   margin: 0;
-  font-size: remy(60);
-  font-weight: 400;
+  font-size: $subtitle-font-size;
+  font-weight: $subtitle-weight;
+
+  @media (max-width: 1200px) {
+    font-size: remy(50);
+  }
+
+  @media (max-width: 800px) {
+    font-size: remy(40);
+  }
+
+  @media (max-width: 500px) {
+    font-size: remy(30);
+  }
 }
 
 .title,
 .subtitle {
   font-family: "Inter", sans-serif;
 }
+
+// .title {
+//   text-align: left;
+//   color: rgba(255, 255, 255, 1);
+//   width: remy(1344);
+//   height: remy(132);
+//   letter-spacing: remy(-2);
+//   font-weight: 600;
+//   font-size: remy(120);
+//   margin: 0;
+// }
+
+// .subtitleName {
+//   margin: 0;
+//   font-size: remy(60);
+//   font-weight: 400;
+// }
+
+// .title,
+// .subtitle {
+//   font-family: "Inter", sans-serif;
+// }
 
 .indicator {
   display: inline-block;
