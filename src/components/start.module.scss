@@ -60,17 +60,17 @@ $subtitle-weight: 400;
   margin: 0;
 
   @media (max-width: 1200px) {
-    font-size: remy(80);
+    font-size: remy(70);
     width: 100%; // Регулируйте по мере необходимости
   }
 
   @media (max-width: 800px) {
-    font-size: remy(70);
+    font-size: remy(50);
     width: 100%;
   }
 
   @media (max-width: 500px) {
-    font-size: remy(60);
+    font-size: remy(40);
     width: 100%;
   }
 }
